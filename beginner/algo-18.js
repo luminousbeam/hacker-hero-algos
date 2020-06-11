@@ -4,7 +4,22 @@
 
 // For example, findMinMax([1,3,5]) should return [1, 5]. Similarly, findMinMax([-1,-3,10]) should return [-3, 10].
 
-function findMinMax(arr) {}
+function findMinMax(arr) {
+  var max = arr[0];
+  var min = arr[0];
+  var findMinMax = [];
+  for (var i = 1; i < arr.length; i++) {
+    if (arr[i] > max) {
+      max = arr[i];
+    }
+    if (arr[i] < min) {
+      min = arr[i];
+    }
+  }
+  findMinMax.push(min, max);
+  // console.log(findMinMax);
+  return findMinMax;
+}
 
 findMinMax();
 
