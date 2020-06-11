@@ -4,7 +4,7 @@
 
 function addOddInts() {
   var sum = 0;
-  for (var i = -25; i <= 30; i+=2) {
+  for (var i = -25000; i <= 30000; i++) {
     if (i % 2 !== 0) {
       console.log(i);
       sum += i;
