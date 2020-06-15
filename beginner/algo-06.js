@@ -5,3 +5,14 @@ function firstPlusLength(arr) {
 }
 
 firstPlusLength();
+
+
+// Test Cases
+
+// firstPlusLength([1,2,5]) to log 4
+
+// firstPlusLength([3,0,2,5]) to log 7
+
+// firstPlusLength([-5,0,2,5]) to log -1
+
+// firstPlusLength([1]) to log 2

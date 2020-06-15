@@ -4,3 +4,7 @@
 function multiplesOf7() {}
 
 multiplesOf7();
+
+// Test Cases
+
+// multiplesOf7() to log 7 14 21 28 35 42 49 56

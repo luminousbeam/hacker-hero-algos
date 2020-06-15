@@ -5,3 +5,15 @@
 function valGreaterThanSecond(arr) {}
 
 valGreaterThanSecond();
+
+// Test Cases
+
+// valGreaterThanSecond([1,3,5,7,9,13]) to log 5 7 9 13
+
+// valGreaterThanSecond([1,3,5,7,9,13]) to return 34
+
+// valGreaterThanSecond([1,3,-5,7,-9,13]) to log 7 13
+
+// valGreaterThanSecond([1,5,3,7,0,19]) to log 7 19
+
+// valGreaterThanSecond([1,5,3,7,0,19]) to return 26

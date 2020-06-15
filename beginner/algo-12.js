@@ -5,3 +5,13 @@
 function bePositive(arr) {}
 
 bePositive();
+
+// Test Cases
+
+// bePositive([-1,-3,-5]) to return [1,3,5]
+
+// bePositive([-1,-3,-5, 7, -9]) to return [1,3,5,7,9]
+
+// bePositive([0,2,4, -6, -8]) to return [0,2,4,6,8]
+
+// bePositive([-1]) to return [1]

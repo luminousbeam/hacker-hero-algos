@@ -6,3 +6,10 @@
 function printEven4to22() {}
 
 printEven4to22();
+
+
+// Test Cases
+
+// printEven4to22() to log 4 6 8 10 12 14 16 18 20 22
+
+// printEven4to22() to return 130

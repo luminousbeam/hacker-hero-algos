@@ -5,3 +5,12 @@
 function squareVal(arr) {}
 
 squareVal();
+
+
+// Test Cases
+
+// squareVal([1,3,5]) to return [1,9,25]
+
+// squareVal([1,-3]) to return [1,9]
+
+// squareVal([0, 2, 4]) to return [0,4,16]

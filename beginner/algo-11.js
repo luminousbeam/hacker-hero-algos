@@ -7,3 +7,11 @@
 function printPositiveIndex(arr) {}
 
 printPositiveIndex();
+
+// Test Cases
+
+// printPositiveIndex([1, 3, -10]) to log 0 1
+
+// printPositiveIndex([10, 5, -5, 15]) to log 0 1 3
+
+// printPositiveIndex([10, 5, 5, 15]) to log 0 1 2 3

@@ -5,3 +5,12 @@
 function printArray(arr) {}
 
 printArray();
+
+
+// Test Cases
+
+// printArray([1,3,5]) to log 1 3 5
+
+// printArray([-1,3,-5]) to log -1 3 -5
+
+// printArray([1,2, 3,4,5]) to log 1 2 3 4 5

@@ -7,3 +7,13 @@
 function findMinMax(arr) {}
 
 findMinMax();
+
+// Test Cases
+
+// findMinMax([1,3,5]) to return [1,5]
+
+// findMinMax([-1,3,5]) to return [-1,5]
+
+// findMinMax([-1,-3,-5]) to return [-5,-1]
+
+// findMinMax([-1, -3, 10]) to return [-3,10]

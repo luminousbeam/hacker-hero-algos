@@ -5,3 +5,11 @@
 function printPositives(arr) {}
 
 printPositives();
+
+// Test Cases
+
+// printPositives([-1,3,-5,10]) to log 3 10
+
+// printPositives([-1,3,-5]) to log 3
+
+// printPositives([-1,10,15]) to log 10 15
