@@ -4,7 +4,19 @@
 
 // Solve the challenge WITHOUT using recursion although you are allowed to convert the integer to a string.
 
-function sumToOne(num) {}
+function sumToOne(num) {
+  while (num > 9) {
+    numStr = num.toString();
+    sum = 0;
+
+    for (char of numStr) {
+      sum += Number(char);
+    }
+    num = sum;
+    // console.log(num);
+  }
+  return num;
+}
 
 sumToOne();
 

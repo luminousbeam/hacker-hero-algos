@@ -2,7 +2,16 @@
 
 // Given an array and a value Y, count and return the number of array values greater than Y. For example, returnArrayCountGreaterThanY( [2,3,5], 4) should return 1 as there is only one element in the array whose value is greater than 4.
 
-function returnArrayCountGreaterThanY(arr, y) {}
+function returnArrayCountGreaterThanY(arr, y) {
+  var count = 0;
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i] > y) {
+      count++;
+    }
+  }
+  // console.log(count);
+  return count;
+}
 
 returnArrayCountGreaterThanY();
 
