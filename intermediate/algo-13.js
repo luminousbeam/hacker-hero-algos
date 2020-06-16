@@ -6,7 +6,48 @@
 
 // Similarly, clockHandAngles(10800) should return [90, 0, 0] as 10,800 seconds is equivalent to 3:00:00.
 
-function clockHandAngles(seconds) {}
+// 1 hr -> 60 mins -> 3600 secs -> 30 deg
+// 1 min -> 60 secs -> 6 deg
+// 1 sec -> 6 deg
+
+function clockHandAngles(seconds) {
+  var hours = Math.floor((seconds / 3600) % 12);
+  console.log(`hours: ${hours}`);
+
+  var remainingSecs = seconds % 3600;
+  console.log(`remaining secs: ${remainingSecs}`);
+
+  var minutes = Math.floor(remainingSecs / 60);
+  console.log(`minutes: ${minutes}`);
+
+  var remainingMins = remainingSecs % 60;
+  console.log(`remaining minutes: ${remainingMins}`);
+
+  var hourAngle = hours * 30;
+  console.log(`initial hour angle: ${hourAngle}`);
+
+  // 30 deg (movement per hr) / 60 min (num of mins per hr) = 2 deg movement on hour handle per minute that's passed
+  var minuteEffectOnHrAngle = minutes / 2; // or minutes * 0.5
+  console.log(`minute effect on hour angle: ${minuteEffectOnHrAngle}`);
+
+  hourAngle = Math.round(hourAngle + minuteEffectOnHrAngle);
+  console.log(`total hour angle: ${hourAngle}`);
+
+  var minAngle = minutes * 6;
+  console.log(`initial minute angle: ${minAngle}`);
+
+  // 6 deg (movement per minute) / 60 sec (num of secs per min) = 0.1 deg movement on minute handle per second that's passed
+  secEffectOnMinAngle = remainingMins * 0.1;
+  console.log(`second effect on minute angle: ${secEffectOnMinAngle}`);
+
+  minAngle = Math.round(minAngle + secEffectOnMinAngle);
+  console.log(`total minute angle: ${minAngle}`);
+
+  secAngle = Math.round(remainingMins * 6);
+  console.log(`seconds angle: ${secAngle}`);
+
+  return [hourAngle, minAngle, secAngle];
+}
 
 clockHandAngles();
 
